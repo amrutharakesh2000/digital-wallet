@@ -1,0 +1,76 @@
+digital-wallet/
+ ┣ src/main/java/com/bankapp
+ ┃ ┣ config
+ ┃ ┃ ┣ SecurityConfig.java
+ ┃ ┃ ┣ JwtAuthFilter.java
+ ┃ ┃ ┣ ModelMapperConfig.java
+ ┃ ┃ ┗ MailConfig.java
+ ┃ ┃
+ ┃ ┣ controller
+ ┃ ┃ ┣ AuthController.java
+ ┃ ┃ ┣ AccountController.java
+ ┃ ┃ ┣ TransactionController.java
+ ┃ ┃ ┣ PaymentController.java
+ ┃ ┃ ┗ BudgetController.java
+ ┃ ┃
+ ┃ ┣ dto
+ ┃ ┃ ┣ request
+ ┃ ┃ ┃ ┣ LoginRequest.java
+ ┃ ┃ ┃ ┣ RegisterRequest.java
+ ┃ ┃ ┃ ┗ TransferRequest.java
+ ┃ ┃ ┃
+ ┃ ┃ ┗ response
+ ┃ ┃   ┣ AuthResponse.java
+ ┃ ┃   ┣ TransactionResponse.java
+ ┃ ┃   ┗ DashboardResponse.java
+ ┃ ┃
+ ┃ ┣ entity
+ ┃ ┃ ┣ User.java
+ ┃ ┃ ┣ Account.java
+ ┃ ┃ ┣ Transaction.java
+ ┃ ┃ ┣ Budget.java
+ ┃ ┃ ┣ Bill.java
+ ┃ ┃ ┗ OtpToken.java
+ ┃ ┃
+ ┃ ┣ repository
+ ┃ ┃ ┣ UserRepository.java
+ ┃ ┃ ┣ AccountRepository.java
+ ┃ ┃ ┣ TransactionRepository.java
+ ┃ ┃ ┣ BudgetRepository.java
+ ┃ ┃ ┗ OtpRepository.java
+ ┃ ┃
+ ┃ ┣ service
+ ┃ ┃ ┣ AuthService.java
+ ┃ ┃ ┣ AccountService.java
+ ┃ ┃ ┣ TransactionService.java
+ ┃ ┃ ┣ PaymentService.java
+ ┃ ┃ ┣ BudgetService.java
+ ┃ ┃ ┗ EmailService.java
+ ┃ ┃
+ ┃ ┣ service/impl
+ ┃ ┃ ┣ AuthServiceImpl.java
+ ┃ ┃ ┣ AccountServiceImpl.java
+ ┃ ┃ ┣ TransactionServiceImpl.java
+ ┃ ┃ ┣ PaymentServiceImpl.java
+ ┃ ┃ ┗ BudgetServiceImpl.java
+ ┃ ┃
+ ┃ ┣ security
+ ┃ ┃ ┣ JwtUtil.java
+ ┃ ┃ ┣ CustomUserDetailsService.java
+ ┃ ┃ ┗ UserPrincipal.java
+ ┃ ┃
+ ┃ ┣ util
+ ┃ ┃ ┣ OtpGenerator.java
+ ┃ ┃ ┗ Constants.java
+ ┃ ┃
+ ┃ ┗ DigitalWalletApplication.java
+ ┃
+ ┣ src/main/resources
+ ┃ ┣ application.properties
+ |
+ ┣ pom.xml
+ ┗ README.md
+
+
+
+
