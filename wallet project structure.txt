@@ -1,0 +1,184 @@
+digital-wallet/
+ ┣ src/main/java/com/walletapp
+ ┃
+ ┃ ┣ config
+ ┃ ┃ ┣ security
+ ┃ ┃ ┃ ┣ SecurityConfig.java
+ ┃ ┃ ┃ ┣ JwtAuthFilter.java
+ ┃ ┃ ┃ ┣ JwtUtil.java
+ ┃ ┃ ┃ ┗ CorsConfig.java
+ ┃ ┃ ┃
+ ┃ ┃ ┣ openapi
+ ┃ ┃ ┃ ┗ SwaggerConfig.java
+ ┃ ┃ ┃
+ ┃ ┃ ┣ cache
+ ┃ ┃ ┃ ┗ RedisConfig.java
+ ┃ ┃ ┃
+ ┃ ┃ ┣ async
+ ┃ ┃ ┃ ┗ AsyncConfig.java
+ ┃ ┃ ┃
+ ┃ ┃ ┗ messaging
+ ┃ ┃   ┗ KafkaConfig.java
+ ┃
+ ┃ ┣ controller
+ ┃ ┃ ┣ AuthController.java
+ ┃ ┃ ┣ UserController.java
+ ┃ ┃ ┣ WalletController.java
+ ┃ ┃ ┣ UpiController.java
+ ┃ ┃ ┣ PaymentController.java
+ ┃ ┃ ┣ TransactionController.java
+ ┃ ┃ ┣ BillController.java
+ ┃ ┃ ┣ NotificationController.java
+ ┃ ┃ ┣ DisputeController.java
+ ┃ ┃ ┗ AdminController.java
+ ┃
+ ┃ ┣ dto
+ ┃ ┃ ┣ request
+ ┃ ┃ ┃ ┣ LoginRequest.java
+ ┃ ┃ ┃ ┣ RegisterRequest.java
+ ┃ ┃ ┃ ┣ UpiPaymentRequest.java
+ ┃ ┃ ┃ ┣ WalletLoadRequest.java
+ ┃ ┃ ┃ ┣ TransferRequest.java
+ ┃ ┃ ┃ ┣ BillPayRequest.java
+ ┃ ┃ ┃ ┗ KycRequest.java
+ ┃ ┃ ┃
+ ┃ ┃ ┣ response
+ ┃ ┃ ┃ ┣ ApiResponse.java
+ ┃ ┃ ┃ ┣ AuthResponse.java
+ ┃ ┃ ┃ ┣ TransactionResponse.java
+ ┃ ┃ ┃ ┣ WalletResponse.java
+ ┃ ┃ ┃ ┣ DashboardResponse.java
+ ┃ ┃ ┃ ┗ ErrorResponse.java
+ ┃
+ ┃ ┣ entity
+ ┃ ┃ ┣ base
+ ┃ ┃ ┃ ┗ BaseEntity.java
+ ┃ ┃ ┃
+ ┃ ┃ ┣ User.java
+ ┃ ┃ ┣ Role.java
+ ┃ ┃ ┣ Wallet.java
+ ┃ ┃ ┣ WalletLedger.java
+ ┃ ┃ ┣ BankAccount.java
+ ┃ ┃ ┣ UpiId.java
+ ┃ ┃ ┣ Transaction.java
+ ┃ ┃ ┣ Bill.java
+ ┃ ┃ ┣ Kyc.java
+ ┃ ┃ ┣ Device.java
+ ┃ ┃ ┣ Notification.java
+ ┃ ┃ ┣ Dispute.java
+ ┃ ┃ ┣ FraudLog.java
+ ┃ ┃ ┗ AuditLog.java
+ ┃
+ ┃ ┣ repository
+ ┃ ┃ ┣ UserRepository.java
+ ┃ ┃ ┣ WalletRepository.java
+ ┃ ┃ ┣ LedgerRepository.java
+ ┃ ┃ ┣ TransactionRepository.java
+ ┃ ┃ ┣ BankRepository.java
+ ┃ ┃ ┣ UpiRepository.java
+ ┃ ┃ ┣ BillRepository.java
+ ┃ ┃ ┣ NotificationRepository.java
+ ┃ ┃ ┣ DisputeRepository.java
+ ┃ ┃ ┣ FraudRepository.java
+ ┃ ┃ ┗ AuditRepository.java
+ ┃
+ ┃ ┣ service
+ ┃ ┃ ┣ AuthService.java
+ ┃ ┃ ┣ UserService.java
+ ┃ ┃ ┣ WalletService.java
+ ┃ ┃ ┣ LedgerService.java
+ ┃ ┃ ┣ UpiService.java
+ ┃ ┃ ┣ PaymentService.java
+ ┃ ┃ ┣ TransactionService.java
+ ┃ ┃ ┣ BillService.java
+ ┃ ┃ ┣ NotificationService.java
+ ┃ ┃ ┣ FraudService.java
+ ┃ ┃ ┣ DisputeService.java
+ ┃ ┃ ┣ KycService.java
+ ┃ ┃ ┣ DeviceService.java
+ ┃ ┃ ┗ AuditService.java
+ ┃
+ ┃ ┣ service/impl
+ ┃ ┃ ┣ AuthServiceImpl.java
+ ┃ ┃ ┣ UserServiceImpl.java
+ ┃ ┃ ┣ WalletServiceImpl.java
+ ┃ ┃ ┣ LedgerServiceImpl.java
+ ┃ ┃ ┣ UpiServiceImpl.java
+ ┃ ┃ ┣ PaymentServiceImpl.java
+ ┃ ┃ ┣ TransactionServiceImpl.java
+ ┃ ┃ ┣ BillServiceImpl.java
+ ┃ ┃ ┣ NotificationServiceImpl.java
+ ┃ ┃ ┣ FraudServiceImpl.java
+ ┃ ┃ ┣ DisputeServiceImpl.java
+ ┃ ┃ ┣ KycServiceImpl.java
+ ┃ ┃ ┣ DeviceServiceImpl.java
+ ┃ ┃ ┗ AuditServiceImpl.java
+ ┃
+ ┃ ┣ integration   ← external systems
+ ┃ ┃ ┣ bank
+ ┃ ┃ ┃ ┗ BankClient.java
+ ┃ ┃ ┣ upi
+ ┃ ┃ ┃ ┗ UpiClient.java
+ ┃ ┃ ┣ sms
+ ┃ ┃ ┃ ┗ SmsClient.java
+ ┃ ┃ ┣ email
+ ┃ ┃ ┃ ┗ EmailClient.java
+ ┃ ┃ ┗ kyc
+ ┃ ┃   ┗ KycClient.java
+ ┃
+ ┃ ┣ security
+ ┃ ┃ ┣ CustomUserDetailsService.java
+ ┃ ┃ ┗ UserPrincipal.java
+ ┃
+ ┃ ┣ events
+ ┃ ┃ ┣ TransactionEvent.java
+ ┃ ┃ ┣ NotificationEvent.java
+ ┃ ┃ ┗ EventPublisher.java
+ ┃
+ ┃ ┣ listener
+ ┃ ┃ ┣ TransactionListener.java
+ ┃ ┃ ┗ NotificationListener.java
+ ┃
+ ┃ ┣ scheduler
+ ┃ ┃ ┣ BillScheduler.java
+ ┃ ┃ ┗ FraudMonitoringScheduler.java
+ ┃
+ ┃ ┣ webhook
+ ┃ ┃ ┣ WebhookController.java
+ ┃ ┃ ┗ WebhookService.java
+ ┃
+ ┃ ┣ util
+ ┃ ┃ ┣ OtpGenerator.java
+ ┃ ┃ ┣ DateUtil.java
+ ┃ ┃ ┣ Constants.java
+ ┃ ┃ ┗ EncryptionUtil.java
+ ┃
+ ┃ ┣ exception
+ ┃ ┃ ┣ GlobalExceptionHandler.java
+ ┃ ┃ ┣ BadRequestException.java
+ ┃ ┃ ┣ UnauthorizedException.java
+ ┃ ┃ ┣ InsufficientBalanceException.java
+ ┃ ┃ ┣ FraudDetectedException.java
+ ┃ ┃ ┗ ResourceNotFoundException.java
+ ┃
+ ┃ ┣ logging
+ ┃ ┃ ┗ LoggingAspect.java
+ ┃
+ ┃ ┗ WalletApplication.java
+ ┃
+ ┣ src/main/resources
+ ┃ ┣ application.yml
+ ┃ ┣ application-dev.yml
+ ┃ ┣ application-prod.yml
+ ┃ ┣ logback-spring.xml
+ ┃ ┗ db/migration   ← Flyway/Liquibase
+ ┃
+ ┣ docker
+ ┃ ┣ Dockerfile
+ ┃ ┗ docker-compose.yml
+ ┃
+ ┣ scripts
+ ┃ ┗ init.sql
+ ┃
+ ┣ pom.xml
+ ┗ README.md
